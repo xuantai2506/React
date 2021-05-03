@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Todo from "./Todo"
 
 const TodoList = (props) => {
@@ -14,7 +13,7 @@ const TodoList = (props) => {
             <ul className="todo-list">
                 {
                     todoList.listTodos.map((item, index) =>
-                        <Todo key={item.id} todoItem={item} {...props} />
+                        <Todo index={index} key={item.id} todoItem={item} {...props} />
                     )
                 }
             </ul>

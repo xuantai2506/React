@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 // component
 import Header from './components/layouts/Header'
 import Footer from './components/layouts/Footer'
@@ -8,7 +6,7 @@ import TodoList from './components/TodoList';
 // css
 import './assets/css/Todo.css'
 import './assets/css/App.css';
-import { useEffect, useState, useCallback } from 'react';
+import { useState } from 'react';
 
 function App() {
 
@@ -55,10 +53,17 @@ function App() {
   const getEditTodo = (id) => {
     setListToDo({
       ...listTodo,
-      idTodoEdit: id
+      idTodoEdit: id,
     })
   }
-
+  // edit todo
+  const editTodo = (todoChange = {}, index) => {
+    listTodo.listTodos.splice(index, 1, todoChange);
+    setListToDo({
+      ...listTodo,
+      idTodoEdit: ""
+    })
+  }
   return (
     <div className="todoapp">
       <Header addToDo={addToDos} />
@@ -67,7 +72,10 @@ function App() {
         markCompleted={markCompleted}
         getEditTodo={getEditTodo}
         idTodoEdit={listTodo.idTodoEdit}
-        removeTodo={removeTodo} />
+        removeTodo={removeTodo}
+        editTodo={editTodo}
+      />
+
       <Footer />
     </div>
   );

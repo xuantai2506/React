@@ -1,14 +1,21 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Todo = (props) => {
-    const { todoItem, markCompleted, removeTodo, getEditTodo, idTodoEdit } = props;
-    useEffect(() => {
-        console.log(idTodoEdit);
-    })
+    const { todoItem, markCompleted, removeTodo, getEditTodo, idTodoEdit, editTodo, index } = props;
+    const [text, setText] = useState(todoItem.text);
+    let idEdit = idTodoEdit === todoItem.id;
+
+    const onEditText = () => {
+        editTodo({
+            ...todoItem,
+            text
+        }, index);
+    }
+
     return (
-        <li className={`${todoItem.isCompleted ? 'completed' : ""}`} >
+        <li className={`${idEdit ? "editing" : ""}${todoItem.isCompleted ? 'completed' : ""}`} >
             {
-                !idTodoEdit ?
+                !idEdit ?
                     <div className="view">
                         <input
                             className="toggle"
@@ -21,7 +28,14 @@ const Todo = (props) => {
                     </div> :
                     <input
                         className="edit"
-                        value={todoItem.text}
+                        value={text}
+                        onChange={(e) => setText(e.target.value)}
+                        onBlur={() => onEditText()}
+                        onKeyPress={(e) => {
+                            if (e.key == "Enter" && text) {
+                                onEditText()
+                            }
+                        }}
                     />
             }
         </li>
