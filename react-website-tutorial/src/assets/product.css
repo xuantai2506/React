@@ -1,0 +1,11 @@
+.card-title {
+    text-align: center;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.card-text {
+    height: 75px;
+    overflow: hidden;
+}
