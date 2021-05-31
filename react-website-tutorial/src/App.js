@@ -16,19 +16,24 @@ import TopMenu from './components/TopMenu';
 import ListProduct from './pages/ListProduct';
 import Home from './pages/Home';
 
+// Context Api
+import { CartProvider } from './contexts/Cart';
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <TopMenu />
+    <CartProvider>
+      <Router>
+        <div className="App">
+          <TopMenu />
 
-        <Switch>
-          <Route path="/" exact component={Home}></Route>
-          <Route path="/list-products" component={ListProduct}></Route>
-        </Switch>
+          <Switch>
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/list-products" component={ListProduct}></Route>
+          </Switch>
 
-      </div>
-    </Router>
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 

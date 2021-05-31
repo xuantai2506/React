@@ -12,6 +12,7 @@ const ListProduct = () => {
             setListProduct(res.data);
         })
     })
+
     return (
         <Container>
             <h1>Products</h1>
@@ -19,7 +20,7 @@ const ListProduct = () => {
                 {
                     listProduct.map((products, index) =>
                         <Col sm="4">
-                            <Product key={index} imageUrl={products.imageUrl} name={products.name} description={products.description} />
+                            <Product key={index} products={products} />
                         </Col>
                     )
                 }

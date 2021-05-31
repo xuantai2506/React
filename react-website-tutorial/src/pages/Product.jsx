@@ -1,18 +1,20 @@
 import React from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Col
+    CardTitle
 } from 'reactstrap';
+import AddCart from '../contexts/AddCart';
+
 const Product = (props) => {
-    const { imageUrl, name, description } = props;
+    const { products } = props;
     return (
         <div>
             <Card className="mb-4">
-                <CardImg top width="100%" src={imageUrl} alt="Card image cap" />
+                <CardImg top width="100%" src={products.imageUrl} alt="Card image cap" />
                 <CardBody>
-                    <CardTitle tag="h5">{name}</CardTitle>
-                    <CardText>{description}</CardText>
-                    <Button>Add</Button>
+                    <CardTitle tag="h5">{products.name}</CardTitle>
+                    <CardText>{products.description}</CardText>
+                    <AddCart products={products} />
                 </CardBody>
             </Card>
         </div>
