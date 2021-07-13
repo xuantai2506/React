@@ -4,13 +4,11 @@
     + useContext :
     + useReducer :
       Ví dụ : auditProvider 
+      
         import React from "react";
         import PropTypes from "prop-types";
         import useGeneral from "../../hooks/general/useGeneral";
-
-
         export const AuditContext = React.createContext();
-
         export const useAudit = () => {
           const audit = React.useContext(AuditContext);
           if (!audit) {
@@ -18,7 +16,6 @@
           }
           return audit;
         };
-
         export const AuditProvider = ({ children }) => {
           const { mapArrayToObj } = useGeneral()
           const [languageId, setLanguageId] = React.useState();
@@ -31,24 +28,20 @@
           const [shopGroup, setShopGroup] = React.useState();
           const [auditFacts, setAuditFacts] = React.useState([]);
           const [detailSummary, setDetailSummary] = React.useState([]);
-
           const setPgArray = (pgArray) => {
             setPgList(mapArrayToObj(pgArray, "productGroupId"));
           }
-
           const wrapped = {
             languageId, shop, period, pgList, info, country, shopGroup, auditFacts, detailSummary, futurePeriod,
             setPgArray, setLanguageId, setShop, setPeriod, setInfo, setCountry, setShopGroup,
             setAuditFacts, setDetailSummary, setFuturePeriod
           };
-
           return (
             <AuditContext.Provider value={wrapped}>
               {children}
             </AuditContext.Provider>
           );
         };
-
         AuditProvider.propTypes = {
           children: PropTypes.node,
         };
