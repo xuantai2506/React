@@ -1,51 +1,14 @@
-# React
+# React 🔥
   - Context API : 
     + createContext :
     + useContext :
     + useReducer :
-      Ví dụ : auditProvider 
-        <code>
-        import React from "react";
-        import PropTypes from "prop-types";
-        import useGeneral from "../../hooks/general/useGeneral";
-        export const AuditContext = React.createContext();
-        export const useAudit = () => {
-          const audit = React.useContext(AuditContext);
-          if (!audit) {
-            throw new Error(`Error`);
-          }
-          return audit;
-        };
-        export const AuditProvider = ({ children }) => {
-          const { mapArrayToObj } = useGeneral()
-          const [languageId, setLanguageId] = React.useState();
-          const [shop, setShop] = React.useState();
-          const [period, setPeriod] = React.useState();
-          const [futurePeriod, setFuturePeriod] = React.useState();
-          const [pgList, setPgList] = React.useState();
-          const [info, setInfo] = React.useState();
-          const [country, setCountry] = React.useState();
-          const [shopGroup, setShopGroup] = React.useState();
-          const [auditFacts, setAuditFacts] = React.useState([]);
-          const [detailSummary, setDetailSummary] = React.useState([]);
-          const setPgArray = (pgArray) => {
-            setPgList(mapArrayToObj(pgArray, "productGroupId"));
-          }
-          const wrapped = {
-            languageId, shop, period, pgList, info, country, shopGroup, auditFacts, detailSummary, futurePeriod,
-            setPgArray, setLanguageId, setShop, setPeriod, setInfo, setCountry, setShopGroup,
-            setAuditFacts, setDetailSummary, setFuturePeriod
-          };
-          return (
-            <AuditContext.Provider value={wrapped}>
-              {children}
-            </AuditContext.Provider>
-          );
-        };
-        AuditProvider.propTypes = {
-          children: PropTypes.node,
-        };
-      </code>
+      Ví dụ : auditProvider.js
+      
+      
+       ![image](https://user-images.githubusercontent.com/52592983/125414454-3683f9be-bc44-485a-b7e7-0052836bd613.png)
+       
+       
       
 # Client 
   - react-bootraps : https://react-bootstrap.github.io/
