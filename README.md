@@ -30,6 +30,7 @@
 # Server 
   - GraphQL : Là ngôn ngữ truy vấn dành cho API, thay vì sử dụng REST API với endpoint nhiều chỗ thì giờ chỉ cần một chỗ
   - Apolo Server : sử dụng cùng với react để lấy data từ GraphQL server 
+  - Laravel API GraphQL : https://lighthouse-php.com/
   - Test query GraphQL : https://studio.apollographql.com/sandbox/explorer?_gl=1*at3ise*_ga*NjMyOTMyMzQxLjE2MjI2MjE0OTg.*_ga_0BGG5V2W2K*MTYyNjE1OTM3Ni4xNS4xLjE2MjYxNTkzODUuMA..
 
 # Các bước phát triển blog 
