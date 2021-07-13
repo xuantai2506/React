@@ -4,7 +4,7 @@
     + useContext :
     + useReducer :
       Ví dụ : auditProvider 
-      
+        <code>
         import React from "react";
         import PropTypes from "prop-types";
         import useGeneral from "../../hooks/general/useGeneral";
@@ -45,7 +45,8 @@
         AuditProvider.propTypes = {
           children: PropTypes.node,
         };
-
+      </code>
+      
 # Client 
   - react-bootraps : https://react-bootstrap.github.io/
   - react-final-form : https://final-form.org/docs/react-final-form/getting-started
