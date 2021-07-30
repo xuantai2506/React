@@ -34,11 +34,9 @@
   - Laravel API GraphQL : https://lighthouse-php.com/
   - Test query GraphQL : https://studio.apollographql.com/sandbox/explorer?_gl=1*at3ise*_ga*NjMyOTMyMzQxLjE2MjI2MjE0OTg.*_ga_0BGG5V2W2K*MTYyNjE1OTM3Ni4xNS4xLjE2MjYxNTkzODUuMA..
 # Blog Hay :
-  ```diff
   - **Lộ trình học Reactjs (Hậu Nguyễn)** : https://gist.github.com/paulnguyen-mn/e8a80c07ab9c090c19bce3c89d7cc50f 
   - Youtube Hậu Nguyễn : https://www.youtube.com/c/EasyFrontend
   - Lộ trình hook của Hậu Nguyễn : https://www.youtube.com/playlist?list=PLeS7aZkL6GOsHNoyeEpeL8B1PnbKoQD9m
-  ```
 # Các bước phát triển blog 
   # Admin - Client
     - Phân tích chức năng hệ thống 
