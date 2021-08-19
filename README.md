@@ -2,6 +2,13 @@
   - Context API : 
     + createContext : Nó trả về 1 đối tượng context để lộ ra Provider và Consumer component. 
     + useContext : Thay cho consumer của context, bên trong useContext set params là đối tượng createContext được tạo (Quan sát hình dưới)
+        
+      Ví dụ : auditProvider.js
+      
+      
+       ![image](https://user-images.githubusercontent.com/52592983/125414454-3683f9be-bc44-485a-b7e7-0052836bd613.png)
+       
+       
     + useReducer : Điều quan trong đó chính là nó tương tự useState nhưng nó sẽ được dùng để xử lý các state phức tạp, thay đổi theo nhiều cách. Vậy nó là gì ? 
         -> Đây là 1 hàm có 2 tham số truyền vào là state và action. Dựa vào action, sẽ có cách trả về, mỗi action state sẽ khác nhau.
         
@@ -12,12 +19,6 @@
         *USE
         
         ![image](https://user-images.githubusercontent.com/52592983/125419990-3c2eb48b-aefa-465f-a52b-b4d1dfdc81a8.png)
-        
-
-      Ví dụ : auditProvider.js
-      
-      
-       ![image](https://user-images.githubusercontent.com/52592983/125414454-3683f9be-bc44-485a-b7e7-0052836bd613.png)
        
        
       
