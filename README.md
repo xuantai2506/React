@@ -10,6 +10,7 @@
        
        * Giải thích về hình trên thì khi sử dụng hàm CreateContext và gán vào biến AuditContext thì hiện tại, AuditContext được trả về 2 đối tượng (Provider, Consumer), ở đây tiếp tục tạo 2 component, component useAudit cho phép các "component child" có thể sử dụng các biến mà component AuditProvider đã cung cấp ở prop values. VÀ ĐIỀU ĐẶC BIỆT TỐI QUAN TRỌNG, ĐÓ LÀ TỚI CÁC COMPONENT CON, CÓ THỂ GỌI CÁC STATE ĐƯỢC LƯU TRONG CONTEXT VÀ CŨNG CÓ THỂ CHỈNH SỬA NÓ
        
+  - ReactHook :
     + useReducer : Điều quan trong đó chính là nó tương tự useState nhưng nó sẽ được dùng để xử lý các state phức tạp, thay đổi theo nhiều cách. Vậy nó là gì ? 
         -> Đây là 1 hàm có 2 tham số truyền vào là state và action. Dựa vào action, sẽ có cách trả về, mỗi action state sẽ khác nhau.
         
