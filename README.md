@@ -1,5 +1,5 @@
 # React 🔥
-  # Context API : 
+  - Context API : 
     - createContext : Nó trả về 1 đối tượng context để lộ ra Provider và Consumer component. 
     - useContext : Thay cho consumer của context, bên trong useContext set params là đối tượng createContext được tạo (Quan sát hình dưới)
         
@@ -10,7 +10,7 @@
        
     * Giải thích về hình trên thì khi sử dụng hàm CreateContext và gán vào biến AuditContext thì hiện tại, AuditContext được trả về 2 đối tượng (Provider, Consumer), ở đây tiếp tục tạo 2 component, component useAudit cho phép các "component child" có thể sử dụng các biến mà component AuditProvider đã cung cấp ở prop values. VÀ ĐIỀU ĐẶC BIỆT TỐI QUAN TRỌNG, ĐÓ LÀ TỚI CÁC COMPONENT CON, CÓ THỂ GỌI CÁC STATE ĐƯỢC LƯU TRONG CONTEXT VÀ CŨNG CÓ THỂ CHỈNH SỬA NÓ
        
- #  ReactHook :
+ -  ReactHook :
     - useState : 
       + Định nghĩa : Đây là hàm bất động bộ. Cách thường dùng là sử dụng lifeCycle -> useEffect()
       + Các vấn đề thường gặp trong useState 
