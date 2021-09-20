@@ -149,3 +149,43 @@ footer {
 .total > div,.total > button {
   flex:  1;
 }
+/* Checkout form */
+form{
+  width: 100%;
+}
+.form-container {
+  width: 100%;
+  padding: 1rem;
+  list-style: none;
+}
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+input {
+  padding: 1rem;
+  border: .1rem #c0c0c0c0 solid;
+}
+/* product detail */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 96vh;
+}
+.product-detail img {
+  max-height: 100vh;
+  max-width: 46rem;
+  margin: 0 auto ;
+}
+.product-details-descriptions {
+  flex: 1 1;
+  margin: 1rem;
+}
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  z-index: 10000;
+}
