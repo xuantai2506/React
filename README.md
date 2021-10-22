@@ -37,6 +37,7 @@
 # Client 
   - react-bootraps : https://react-bootstrap.github.io/
   - react-final-form : https://final-form.org/docs/react-final-form/getting-started
+  - react-zendesk : https://www.npmjs.com/package/react-zendesk
   - blue-print-js : https://blueprintjs.com/docs/
     -> Toast : từ blue-printjs
   - Lodash : https://lodash.com/ 
