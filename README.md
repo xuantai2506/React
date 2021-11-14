@@ -44,6 +44,7 @@
     -> Toast : từ blue-printjs
   - Lodash : https://lodash.com/ 
   - FormatJs : https://www.npmjs.com/package/react-intl 
+  - Drag/ Drop : https://react-dnd.github.io/react-dnd/about 
 # Server 
   - GraphQL : Là ngôn ngữ truy vấn dành cho API, thay vì sử dụng REST API với endpoint nhiều chỗ thì giờ chỉ cần một chỗ
   - Apolo Server : sử dụng cùng với react để lấy data từ GraphQL server 
